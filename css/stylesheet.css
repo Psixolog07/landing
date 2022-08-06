@@ -54,8 +54,7 @@ body {
 
 .header-nav {
   position: absolute;
-  right: 0;
-  line-height: 40px;
+  right: 5%;
 }
 
 .header-nav-item {
@@ -120,7 +119,7 @@ body {
 .about-feature {
   float: left;
   width: 25%;
-  height: 150px;
+  height: 160px;
   margin: 0 1em;
   border-radius: 20px;
   border: inset 5px mediumvioletred;
@@ -130,7 +129,7 @@ body {
   width: 80px;
   height: 80px;
   display: block;
-  margin: 0 auto;
+  margin: 7px auto 0 auto;
 }
 
 .about-feature-text {
@@ -138,6 +137,7 @@ body {
   font-size: 20px;
   margin-top: 1em;
   text-align: center;
+  margin-bottom: 5px;
 }
 
 .comments {
@@ -181,6 +181,7 @@ body {
   font-size: 16px;
   font-style: italic;
   margin-top: 1em;
+  margin-right: 1em;
   text-align: center;
 }
 
@@ -194,6 +195,7 @@ body {
   justify-content: center;
   margin: 2em 0 2em 10%;
   background-color: rgb(93, 8, 62);
+  overflow: hidden;
 }
 
 .action-purchase-reference {
@@ -215,8 +217,17 @@ body {
 .footer-contact {
   font-size: 110%;
   color: navy;
-  margin: 0 11%;
   text-decoration: none;
+}
+
+.footer-contact#phone {
+  position: absolute;
+  left: 5%;
+}
+
+.footer-contact#mail {
+  position: absolute;
+  right: 5%;
 }
 
 .action-purchase-button:hover {
@@ -250,6 +261,12 @@ body {
 
   .comments-column-text {
     margin-right: 1em;
+  }
+}
+
+@media (max-width: 1025px) {
+  .about-feature {
+    height: 180px;
   }
 }
 
@@ -304,7 +321,7 @@ body {
 
   .header-nav-item {
     display: block;
-    margin-top: -10px;
+    margin-bottom: 4px;
   }
 
   .header-nav-link {
@@ -362,7 +379,13 @@ body {
     padding: 0;
   }
 
-  .footer-contact {
-    margin: 0 10px;
+  .footer-contact#phone {
+    left: 5%;
+    margin-bottom: 20px;
+  }
+
+  .footer-contact#mail {
+    left: 5%;
+    margin-top: 40px;
   }
 }
