@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 body {
@@ -19,20 +20,17 @@ body {
 .intro {
   margin-top: -80px;
   position: relative;
+  height: 1000px;
 }
 
 .intro-title {
   position: absolute;
   font-family: 'Comfortaa', cursive;
   font-size: 40px;
-  margin-top: 20%;
+  margin-top: 30%;
   margin-left: 5%;
   color: rgb(148, 21, 101);
   text-shadow: 1px 1px 2px black;
-}
-
-.intro-image {
-  width: 100%;
 }
 
 .header {
@@ -229,18 +227,142 @@ body {
 @media (max-width: 1281px) {
   .about-info-video {
     float: none;
+    margin-left: 30%;
+  }
+
+  .about-info-text {
+    margin: 0 5em;
+  }
+
+  .about-features {
+    margin-left: 8em;
+    margin-top: 5em;
+  }
+
+  .comments-columns {
+    margin-left: 10%;
+  }
+
+  .comments-column {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .comments-column-text {
+    margin-right: 1em;
+  }
+}
+
+@media (max-width: 913px) {
+  .intro {
+    height: 700px;
+  }
+  
+  .intro-title {
+    font-size: 30px;
+  }
+
+  .about-info-video {
+    margin-left: 20%;
+  }
+
+  .about-features {
+    margin-left: 5em;
+  }
+
+  .comments-columns {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 821px) {
+  .about-info-video {
+    margin-left: 17%;
+  }
+
+  .comments-column {
+    height: 110px;
+  }
+}
+
+@media (max-width: 769px) {
+  .about-info-video {
+    margin-left: 6em;
+  }
+}
+
+@media (max-width: 415px) {
+  .header-nav {
+    margin-top: 10px;
+  }
+
+  .header-logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 40px;
+  }
+
+  .header-nav-item {
+    display: block;
+    margin-top: -10px;
+  }
+
+  .header-nav-link {
+    font-size: 90%;
+  }
+
+  .intro-title {
+    margin-top: 70%;
+    font-size: 17px;
+  }
+
+  .about-info-video {
+    margin-left: 0.5em;
+    margin-right: 0;
+    width: 380px;
+    height: 230px;
+    overflow-x: hidden;
+  }
+
+  .about-info-text {
+    width: 90%;
+    margin-right: 0;
+    margin-left: 0.7em;
+  }
+
+  .about-feature {
+    float: none;
+    width: 90%;
+    margin-bottom: 3px;
+    margin-right: 0;
+    margin-left: 0.7em;
   }
 
   .about-features {
     margin-left: 5px;
   }
 
-  .about-feature {
-    margin: 0 7px;
-    float: none;
+  .comments-columns {
+    margin-left: 1em;
   }
 
   .comments-column {
     float: none;
+    width: 90%;
+    margin-right: 0;
+    margin-left: 0.7em;
+  }
+
+  .action-purchase-button {
+    margin-left: 2.5em;
+    margin-right: 0;
+  }
+
+  .action-purchase-reference {
+    padding: 0;
+  }
+
+  .footer-contact {
+    margin: 0 10px;
   }
 }
