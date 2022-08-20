@@ -35,7 +35,6 @@ body {
 .intro-title {
   font-size: 50px;
   font-weight: bold;
-  color: rgb(0, 0, 0);
   text-shadow: 1px 1px 2px black;
 }
 
@@ -43,13 +42,10 @@ body {
   margin-top: 7px;
   font-family: 'Caveat', cursive;
   font-size: 270%;
+  font-weight: bolder;
   width: fit-content;
   padding: 7px 21px;
-  border-radius: 20px;
-  border-top-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  background: rgb(235, 186, 217) ;
-  border: solid 3px;
+  color: rgb(135, 19, 92);
 }
 
 .header {
@@ -94,9 +90,8 @@ body {
 
 .about {
   position: relative;
-  margin: -300px 15px 0 15px;
+  margin-top: -300px;
   background-color: rgb(249, 212, 235);
-  border-radius: 30px;
   border: solid 3px rgb(196, 158, 181);
 }
 
@@ -120,7 +115,7 @@ body {
 }
 
 .section-title {
-  font-size: 70px;
+  font-size: 60px;
   font-weight: bolder;
   text-align: center;
   margin: 2em 0;
@@ -184,9 +179,8 @@ body {
 }
 
 .comments {
-  border-radius: 30px;
   background-color: rgb(249, 212, 235);
-  margin: 15px 15px 0 15px;
+  margin-top: 15px;
   border: solid 3px rgb(196, 158, 181);
 }
 
@@ -248,7 +242,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2em 0 2em 10%;
+  align-self: center;
+  margin: 2em;
   background-color: rgb(235, 186, 217);
   overflow: hidden;
 }
@@ -287,6 +282,22 @@ body {
 .action-purchase-button:hover {
   background-color: rgb(202, 14, 167);
   transition: all ease .3s;
+}
+
+@media (min-width: 1920px) {
+
+  .action-purchase-button {
+    width: 1800px;
+  }
+
+  .small-container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    border-radius: 0px;
+  }
 }
 
 @media (max-width: 1025px) {
