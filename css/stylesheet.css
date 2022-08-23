@@ -235,7 +235,7 @@ body {
 }
 
 .action-purchase-button {
-  width: 80%;
+  width: 500px;
   height: 90px;
   border: solid 3px;
   border-radius: 80px;
@@ -243,7 +243,7 @@ body {
   align-items: center;
   justify-content: center;
   align-self: center;
-  margin: 2em;
+  margin: 2em auto;
   background-color: rgb(235, 186, 217);
   overflow: hidden;
 }
@@ -286,10 +286,6 @@ body {
 
 @media (min-width: 1480px) {
 
-  .action-purchase-button {
-    width: 1380px;
-  }
-
   .small-container {
     width: 1480px;
     margin: 0 auto;
@@ -319,6 +315,7 @@ body {
 
   .action-purchase-button {
     height: 50px;
+    width: 300px;
   }
 
   .action-purchase-reference {
